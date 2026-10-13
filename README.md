@@ -1,5 +1,12 @@
 # Knowledge Graph + RAG System
 
+## Overview
+
+A small retrieval service where the knowledge base is a set of subject-relation-object triples written out as plain sentences. A `POST /ask` endpoint ranks those passages by word overlap with the question and returns an answer that cites the triple file it came from. A versioned `/v1` ops API adds workspaces, tenant isolation, job approval and audit records around the retrieval endpoint.
+
+- **Built with:** Python, pytest, Docker, GitHub Actions
+- **Scope:** Local laptop lab with tests; it does not call a hosted model and refuses production apply.
+
 <!-- project-guide:start -->
 ## Project guide
 
